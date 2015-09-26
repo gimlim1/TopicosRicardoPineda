@@ -19,7 +19,7 @@ namespace ResolverEcuacionCuadratica
             if (validarDiscriminante.ValidarElDiscriminanteMayorQueCero(Parametros.getDiscriminante()))
             {
 
-                //calcular las raices
+                //calcular las raices   
                 CalcularRaices calcularRaices = new CalcularRaices();
                 calcularRaices.CalcularLasRaices(Parametros);
             }
