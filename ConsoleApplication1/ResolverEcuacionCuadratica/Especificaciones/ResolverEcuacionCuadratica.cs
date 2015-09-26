@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ResolverEcuacionCuadratica
 {
-    class ResolverEcuacionCuadratica
+    public class ResolverEcuacionCuadratica
     {
 
         public void ResolverLaEcuacionCuadratica(clsParametrosEcuacion Parametros)
@@ -18,10 +18,18 @@ namespace ResolverEcuacionCuadratica
             ValidarDiscriminante validarDiscriminante = new ValidarDiscriminante();
             if (validarDiscriminante.ValidarElDiscriminanteMayorQueCero(Parametros.getDiscriminante()))
             {
-
-                //calcular las raices   
-                CalcularRaices calcularRaices = new CalcularRaices();
-                calcularRaices.CalcularLasRaices(Parametros);
+                ValidarPrimerNumero validarprimernumero = new ValidarPrimerNumero();
+                if(validarprimernumero.ValidarPrimeroDiferenteDeCero(Parametros.getPrimer())){
+                   //calcular las raices   
+                   CalcularRaices calcularRaices = new CalcularRaices();
+                   calcularRaices.CalcularLasRaices(Parametros);
+                }
+                else
+                {
+                    Exception ex = new Exception(string.Format("Ocurrió un error al calcular las raices," +
+                            " ya que el primer numero [{0}] es cero", Parametros.getPrimer().ToString()));
+                    throw ex;
+                }
             }
             else
             //levante una excepción

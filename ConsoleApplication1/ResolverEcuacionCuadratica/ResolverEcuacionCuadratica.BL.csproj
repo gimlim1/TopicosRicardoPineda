@@ -46,6 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Especificaciones\ResolverEcuacionCuadratica.cs" />
     <Compile Include="Validaciones\ValidarDiscriminante.cs" />
+    <Compile Include="Validaciones\ValidarPrimerNumero.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

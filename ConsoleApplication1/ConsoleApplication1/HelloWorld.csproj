@@ -49,6 +49,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ResolverEcuacionCuadratica\ResolverEcuacionCuadratica.BL.csproj">
+      <Project>{dedcf660-e046-4f8e-89ea-a982d1d48474}</Project>
+      <Name>ResolverEcuacionCuadratica.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

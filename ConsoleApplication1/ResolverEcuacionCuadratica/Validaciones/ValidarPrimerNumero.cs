@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace ResolverEcuacionCuadratica
 {
-     public class ValidarDiscriminante
+   public class ValidarPrimerNumero
     {
-        public bool ValidarElDiscriminanteMayorQueCero (double discriminante)
+        public bool ValidarPrimeroDiferenteDeCero(double a)
         {
             bool resultado = false;
-            resultado = (discriminante >= 0);
+            resultado = (a != 0);
             return resultado;
         }
-    
-
-
     }
 }

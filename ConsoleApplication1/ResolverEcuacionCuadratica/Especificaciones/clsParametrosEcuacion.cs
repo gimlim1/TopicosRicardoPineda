@@ -16,14 +16,11 @@ namespace ResolverEcuacionCuadratica
         private double segundraiz;
         private double discriminante;
         
-        public clsParametrosEcuacion(double primer,double segundo,double tercer,double primeraiz,double segundraiz,double discri)
+        public clsParametrosEcuacion(double primer,double segundo,double tercer)
         {
             this.primerNumero = primer;
             this.segundoNumero = segundo;
             this.tercerNumero = tercer;
-            this.primeraiz = primeraiz;
-            this.segundraiz = segundraiz;
-            this.discriminante = discri;
         }
 
         public double getPrimer() {
