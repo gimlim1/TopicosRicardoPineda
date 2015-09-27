@@ -27,9 +27,30 @@ namespace ResolverEcuacionCuadratica.Test
             ResolverEcuacionCuadratica resolver = new ResolverEcuacionCuadratica();
             //invoque al método correspondiente
             resolver.ResolverLaEcuacionCuadratica(parametros);
-            
 
             Assert.IsTrue((primeraRaizEsperada == parametros.getPrimerRaiz() || 
+                           primeraRaizEsperada == parametros.getSegundRaiz()));
+
+            Assert.IsTrue((segundaRaizEsperada == parametros.getPrimerRaiz() || 
+                           segundaRaizEsperada == parametros.getSegundRaiz()));
+
+        }
+
+        [TestMethod]
+        public void ProbarCero()
+        {
+            double primer = 0;
+            double segundo = 2;
+            double tercer = 3;
+            double primeraRaizEsperada = 3;
+            double segundaRaizEsperada = -1;
+            clsParametrosEcuacion parametros = new clsParametrosEcuacion(primer, segundo, tercer);
+
+            ResolverEcuacionCuadratica resolver = new ResolverEcuacionCuadratica();
+            //invoque al método correspondiente
+            resolver.ResolverLaEcuacionCuadratica(parametros);
+
+            Assert.IsTrue((primeraRaizEsperada == parametros.getPrimerRaiz() ||
                            primeraRaizEsperada == parametros.getSegundRaiz()));
 
             Assert.IsTrue((segundaRaizEsperada == parametros.getPrimerRaiz() ||
