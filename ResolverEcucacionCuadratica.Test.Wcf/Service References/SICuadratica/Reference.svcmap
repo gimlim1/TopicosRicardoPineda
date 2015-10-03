@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e2a860d-68b2-4139-b374-d5acb5a6e9b5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52444/ResolverEcucacionCuadratica.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ResolverEcuacionCuadratica.wsdl" MetadataType="Wsdl" ID="5c319048-ddd4-4273-bcbf-cb02295b1fac" SourceId="1" SourceUrl="http://localhost:52444/ResolverEcucacionCuadratica.svc?wsdl" />
+    <MetadataFile FileName="ResolverEcucacionCuadratica.xsd" MetadataType="Schema" ID="617a58f2-9ae6-4ec8-b923-bdac29341736" SourceId="1" SourceUrl="http://localhost:52444/ResolverEcucacionCuadratica.svc?xsd=xsd0" />
+    <MetadataFile FileName="ResolverEcucacionCuadratica1.xsd" MetadataType="Schema" ID="2405f351-0049-4548-9ae4-d667b9b31369" SourceId="1" SourceUrl="http://localhost:52444/ResolverEcucacionCuadratica.svc?xsd=xsd2" />
+    <MetadataFile FileName="ResolverEcucacionCuadratica.disco" MetadataType="Disco" ID="7fd8fe9d-8b75-45fa-ab5e-71d0aba77acc" SourceId="1" SourceUrl="http://localhost:52444/ResolverEcucacionCuadratica.svc?disco" />
+    <MetadataFile FileName="ResolverEcucacionCuadratica2.xsd" MetadataType="Schema" ID="ed1849c8-e7f3-46e0-9ebe-7b6adfaf3090" SourceId="1" SourceUrl="http://localhost:52444/ResolverEcucacionCuadratica.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
