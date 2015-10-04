@@ -10,11 +10,11 @@ namespace WcfResolverEcuacionCuadratica
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
-    public interface IResolverEcuacionEcuadratica
+    public interface IResolverEcuacion
     {
 
         [OperationContract]
-        void ResolverEcuacion(double primer, double segundo, double tercer, ref double x1, ref double x2);
+        void Resolver(double primer, double segundo, double tercer,ref double raiz1,ref double raiz2);
         string GetData(int value);
 
         [OperationContract]

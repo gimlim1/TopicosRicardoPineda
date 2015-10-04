@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ResolverEcuacionCuadratica;
+using Resolver;
 
 
 
@@ -22,7 +22,7 @@ namespace ConsoleApplication
             double c = Double.Parse(Console.ReadLine());
             clsParametrosEcuacion parametros = new clsParametrosEcuacion(a,b,c);
 
-            ResolverEcuacionCuadratica.ResolverEcuacionCuadratica ecuacion = new ResolverEcuacionCuadratica.ResolverEcuacionCuadratica();
+            Resolver.ResolverEcuacionCuadratica ecuacion = new Resolver.ResolverEcuacionCuadratica();
             ecuacion.ResolverLaEcuacionCuadratica(parametros);
             Console.WriteLine(parametros.getPrimerRaiz());
             Console.WriteLine(parametros.getSegundRaiz());

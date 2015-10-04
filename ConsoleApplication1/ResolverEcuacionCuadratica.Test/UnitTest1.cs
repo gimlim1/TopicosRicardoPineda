@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ResolverEcuacionCuadratica;
+using Resolver;
 
-namespace ResolverEcuacionCuadratica.Test
+namespace Resolver.Test
 {
     /*
     Declare variables para los parámetros reales
@@ -25,6 +25,7 @@ namespace ResolverEcuacionCuadratica.Test
             clsParametrosEcuacion parametros = new clsParametrosEcuacion(primer,segundo,tercer);
 
             ResolverEcuacionCuadratica resolver = new ResolverEcuacionCuadratica();
+            
             //invoque al método correspondiente
             resolver.ResolverLaEcuacionCuadratica(parametros);
 
