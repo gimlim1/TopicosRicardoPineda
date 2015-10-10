@@ -21,8 +21,7 @@ namespace ResolverEcucacionCuadratica.Test.Wcf
             SICuadratica.ResolverEcuacionEcuadraticaClient resolver = new SICuadratica.ResolverEcuacionEcuadraticaClient();
             //invoque al método correspondiente
             resolver.ResolverEcuacion(primer, segundo, tercer, ref real, ref real1);
-           // resolver.ResolverLaEcuacionCuadratica(parametros);
-
+           //resolver.ResolverLaEcuacionCuadratica(parametros);
             Assert.IsTrue((primeraRaizEsperada == real ||
                            primeraRaizEsperada == real1));
 
